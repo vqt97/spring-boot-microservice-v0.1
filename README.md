@@ -1,6 +1,6 @@
-Microservice Sample
+**Microservice Sample**
 Translations:
-This is a sample for my Microservices Book (English / German).
+This is a sample for my Microservices (English).
 
 This project creates a VM with the complete micro service demo system in Docker containers inside a Vagrant VM. The services are implemented in Java using Spring and Spring Cloud.
 
@@ -10,7 +10,6 @@ Order to process orders.
 Customer to handle customer data.
 Catalog to handle the items in the catalog.
 Technologies
-Eureka for Lookup
 Ribbon for Load Balancing. See the classes CatalogClient and CustomerClient in com.ewolff.microservice.order.clients in the microservice-demo-order project.
 Hystrix is used for resilience. See CatalogClient in com.ewolff.microservice.order.clients in the microservice-demo-order project . Note that the CustomerClient won't use Hystrix. This way you can see how a crash of the Customer microservices makes the Order microservice useless.
 Hystrix has a dashboard. Turbine can be used to combine the data from multiple sources. However, this does not work at the moment.
